@@ -1,0 +1,153 @@
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  cursor: url("../images/pixel-cursor.png"), auto;
+  background: url("../wallpaper/") no-repeat center center fixed;
+  background-size: cover;
+}
+
+.player-info,
+.computer-info {
+  background-color: rgba(128, 128, 128, 0.9); /* Gray background with transparency */
+  padding: 20px;
+  border-radius: 10px;
+  color: white; /* White text for better contrast against the dark background */
+  width: 100%; /* to make it fit the contents better */
+  box-sizing: border-box; /* Include padding and border in the element's total width and height */
+}
+
+#current-score-popup .popup-content,
+#final-score-popup .popup-content {
+  background-color: rgba(128, 128, 128, 0.9);
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+h1 {
+  margin-top: 20px;
+}
+
+.title0 {
+  color: greenyellow;
+  text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #ff00de;
+}
+
+#title0 {
+  color: rgba(128, 128, 128, 0.9);
+}
+
+#title1 {
+  width: 200px;
+  height: auto; /* Maintain aspect ratio */
+}
+
+#result-gif {
+  max-width: 300px;
+  max-height: 200px;
+}
+
+.dice {
+  font-size: 48px;
+  display: inline-block;
+  margin: 5px;
+}
+
+.game-board {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap; /* this will ensure that if content is too much it moves to next line */
+  margin-bottom: 20px; /* Add some margin to the bottom to give it some space */
+}
+
+.player-info img,
+.computer-info img {
+  max-width: 200px; /* Adjust this value as needed */
+  max-height: 200px; /* Adjust this value as needed */
+  -o-object-fit: contain;
+     object-fit: contain; /* Makes sure the whole gif fits into the given dimensions */
+  display: block; /* Aligns the image to the center of the div */
+  margin: 0 auto; /* Aligns the image to the center of the div */
+}
+
+.score-details {
+  display: flex;
+  justify-content: space-between;
+}
+
+.player-score,
+.cpu-score {
+  width: 45%;
+}
+
+button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+button#roll-btn:hover {
+  cursor: pointer;
+}
+
+#winner-msg {
+  font-size: 24px;
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+#popup {
+  position: fixed;
+  top: 100%;
+  width: 100%;
+  z-index: 1; /* Sit on top */
+  left: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  background-color: rgba(0, 0, 0, 0.4); /* Black with opacity */
+  display: flex;
+  align-items: center; /* Center vertically */
+  justify-content: center; /* Center horizontally */
+}
+
+.popup-content {
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  width: 90vw;
+  max-width: 900px;
+  box-sizing: border-box;
+  display: flex; /* Use flex layout */
+  flex-direction: column; /* Stack the children vertically */
+  align-items: center; /* Center the children horizontally */
+}
+
+.popup-content button {
+  margin: 10px;
+}
+
+#current-score-popup, #final-score-popup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin: 0;
+}
+
+#popup-message {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+#play-again-btn {
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}

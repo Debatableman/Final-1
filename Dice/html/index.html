@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dice Game</title>
+    <link rel="stylesheet" href="../css/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="title0">Table-Top Experience</h1>
+      <img src="../wallpaper/logo.png" id="title1" alt="logo">
+      <div class="game-board">
+        <div class="player-info">
+          <h2>Player</h2>
+          <img src="../gif-characters/Player/Space marine-1.gif" alt="Player gif">
+        </div>
+        <div class="computer-info">
+          <h2>Chaos</h2>
+          <img src="../gif-characters/CPU/Rubric-marines.gif" alt="CPU gif">
+        </div>
+      </div>
+      <button id="start-btn">Start Game</button>
+
+      <div class="container"></div>
+      <div id="current-score-popup" style="display: none;">
+        <div class="popup-content">
+        <div class="game-board">
+          <div class="player-info">
+          <h2>Current Score</h2>
+          <div class="game-board">
+            <div class="player-info">
+              <h2>Player</h2>
+              <p>Die 1: <span id="player-roll-die1">-</span></p>
+              <p>Die 2: <span id="player-roll-die2">-</span></p>
+              <p>Round Score: <span id="player-round-score">0</span></p>
+              <p>Total Score: <span id="player-total-score">0</span></p>
+            </div>
+            <div class="computer-info">
+              <h2>Chaos</h2>
+              <p>Die 1: <span id="computer-roll-die1">-</span></p>
+              <p>Die 2: <span id="computer-roll-die2">-</span></p>
+              <p>Round Score: <span id="computer-round-score">0</span></p>
+              <p>Total Score: <span id="computer-total-score">0</span></p>
+            </div>
+          </div>
+          <button id="roll-btn" style="display: none;">Roll Dice</button>
+          <button id="reset-btn" style="display: none;">Reset Game</button>
+        </div>
+      </div>
+
+      <div id="final-score-popup" style="display: none;">
+        <div class="popup-content">
+          <img src="" id="result-gif" alt="Result GIF" />
+          <h2 id="popup-message">Game started</h2>
+          <button id="play-again-btn" style="display: none;">Play Again</button>
+        </div>
+      </div>
+
+      <div id="current-score-popup" style="display: none;">
+        <div class="popup-content">
+          <h2>Current Score</h2>
+          <div class="score-details">
+            <div class="player-score">
+              <h3>Player</h3>
+              <p>Die 1: <span id="popup-player-roll-die1">-</span></p>
+              <p>Die 2: <span id="popup-player-roll-die2">-</span></p>
+              <p>Round Score: <span id="popup-player-round-score">0</span></p>
+              <p>Total Score: <span id="popup-player-total-score">0</span></p>
+            </div>
+            <div class="cpu-score">
+              <h3>Chaos</h3>
+              <p>Die 1: <span id="popup-computer-roll-die1">-</span></p>
+              <p>Die 2: <span id="popup-computer-roll-die2">-</span></p>
+              <p>Round Score: <span id="popup-computer-round-score">0</span></p>
+              <p>Total Score: <span id="popup-computer-total-score">0</span></p>
+            </div>
+          </div>
+          <button id="roll-btn" style="display: none;">Roll Dice</button>
+          <button id="reset-btn" style="display: none;">Reset Game</button>
+        </div>
+      </div>
+            
+
+      <p id="winner-msg">-</p>
+    </div>
+    <script src="../script/scripts.js"></script>
+  </body>
+</html>
